@@ -1,5 +1,4 @@
 // imports (Leaflet + CSS)
-import "./style.css";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -24,14 +23,14 @@ let lieuxInteret = [
   { nom: "Aéroport Charles-de-Gaulle", latitude: 49.0097, longitude: 2.5479 },
 ];
 
-// Affichage des lieux avec marqueur
-
 const iconePerso = L.icon({
   iconUrl: iconeUrl,
   iconSize: [38, 38],
   iconAnchor: [19, 38],
   popupAnchor: [0, -38],
 });
+
+// Affichage des lieux avec marqueur
 
 for (let i = 0; i < lieuxInteret.length; i++) {
   const lieu = lieuxInteret[i];
